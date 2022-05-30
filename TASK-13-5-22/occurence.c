@@ -1,11 +1,11 @@
 #include <stdio.h>
-void occur_num(int arr[],int res ,int i,int x )
+void occur_num(int arr[],int res ,int i,int num)
 {
 
      res = 0;
     for (int i=0; i<10; i++){
-        if (x == arr[i]){
-          res++;
+        if (num== arr[i]){
+          num++;
           
         }  
         
@@ -15,9 +15,9 @@ void occur_num(int arr[],int res ,int i,int x )
 int main()
 {
     int arr[] = {1, 2, 2, 2, 2, 3, 4, 7 ,8 ,8 };
-    int n = sizeof(arr)/sizeof(arr[0]);
-    int x = 2;
+    int length = sizeof(arr)/sizeof(arr[0]);
+    int num = 2;
     int res,i;
-    occur_num(arr, res,i ,x);
+    occur_num(arr, res,i ,num);
     return 0;
 }
